@@ -5,9 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "date-and-time": "^0.9.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "date-and-time": "^0.9.0",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.5"
   },
@@ -17,13 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lauritsen1/team-collab-RTSJesp95.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lauritsen1/team-collab-RTSJesp95/issues"
-  },
-  "homepage": "https://github.com/Lauritsen1/team-collab-RTSJesp95#readme"
 }
