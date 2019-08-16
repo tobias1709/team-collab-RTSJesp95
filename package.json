@@ -2,21 +2,7 @@
   "name": "team-collab-RTSJesp95",
   "version": "1.0.0",
   "description": "Opgavens formål er at få afprøvet udvikling af en express baseret hjemmeside, via team arbejde.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RTSJesp95/team-collab-RTSJesp95.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RTSJesp95/team-collab-RTSJesp95/issues"
-  },
-  "homepage": "https://github.com/RTSJesp95/team-collab-RTSJesp95#readme",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "date-and-time": "^0.9.0",
@@ -24,5 +10,16 @@
     "express": "^4.17.1",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.5"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {}
 }
