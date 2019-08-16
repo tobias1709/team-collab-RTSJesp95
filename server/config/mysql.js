@@ -6,8 +6,7 @@ module.exports = {
          host: 'localhost',
          user: 'root',
          password: '',
-         port: '3306',
-         database: 'praktiskweb_webblog'
+         port: '3306'
       });
    }
 }

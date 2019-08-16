@@ -17,13 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Draxlicious/team-collab-RTSJesp95.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Draxlicious/team-collab-RTSJesp95/issues"
-  },
-  "homepage": "https://github.com/Draxlicious/team-collab-RTSJesp95#readme"
 }
