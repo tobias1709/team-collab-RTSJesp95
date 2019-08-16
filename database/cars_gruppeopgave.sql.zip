@@ -1,0 +1,101 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Vært: 127.0.0.1
+-- Genereringstid: 16. 08 2019 kl. 12:50:27
+-- Serverversion: 10.1.30-MariaDB
+-- PHP-version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `cars_gruppeopgave`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `brands`
+--
+
+CREATE TABLE `brands` (
+  `brand_id` int(11) NOT NULL,
+  `brand_title` varchar(128) NOT NULL,
+  `brand_image` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `cars`
+--
+
+CREATE TABLE `cars` (
+  `cars_id` int(11) NOT NULL,
+  `cars_title` varchar(64) NOT NULL,
+  `cars_description` varchar(1000) NOT NULL,
+  `cars_topspeed` varchar(32) NOT NULL,
+  `cars_price` decimal(12,3) NOT NULL,
+  `cars_brand_fk` int(11) NOT NULL,
+  `cars_image` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Data dump for tabellen `cars`
+--
+
+INSERT INTO `cars` (`cars_id`, `cars_title`, `cars_description`, `cars_topspeed`, `cars_price`, `cars_brand_fk`, `cars_image`) VALUES
+(1, 'title 1', 'This char is amazing', '64km/t', '64.000', 0, ''),
+(2, 'title 2', 'This char is amazing 2', '65km/t', '165.000', 0, ''),
+(3, 'title 3', 'This car is awesome 3', '64km/t', '165.000', 0, ''),
+(4, 'title 4', 'This car is awesome 4', '65km/t', '65.000', 0, ''),
+(5, 'title 5', 'This car is awesome 5', '12km/t', '1.222', 0, ''),
+(6, 'title 6', 'This car is awesome 6', '1km/t', '1.222', 0, ''),
+(7, 'title 7', 'This car is awesome 7', '2km/t', '999999999.999', 0, '');
+
+--
+-- Begrænsninger for dumpede tabeller
+--
+
+--
+-- Indeks for tabel `brands`
+--
+ALTER TABLE `brands`
+  ADD PRIMARY KEY (`brand_id`);
+
+--
+-- Indeks for tabel `cars`
+--
+ALTER TABLE `cars`
+  ADD PRIMARY KEY (`cars_id`);
+
+--
+-- Brug ikke AUTO_INCREMENT for slettede tabeller
+--
+
+--
+-- Tilføj AUTO_INCREMENT i tabel `brands`
+--
+ALTER TABLE `brands`
+  MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Tilføj AUTO_INCREMENT i tabel `cars`
+--
+ALTER TABLE `cars`
+  MODIFY `cars_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
