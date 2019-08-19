@@ -4,13 +4,60 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
+
 #wrapper{
   max-width: 100vw;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-.carBrand{
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header h1{
+  letter-spacing: 10px;
+  color: #fff;
+}
+
+footer{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  color: #fff;
+  align-items: center;
+  align-self: flex-end;
+  height: 25vh;
+  font-size: 0.9em;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+footer h3{
+  padding: 1em 0;
+}
+
+footer ul li{
+  list-style: none;
+  font-weight: 300;
+  padding: 0.2em;
+}
+
+.crew{
+  display: flex;
+  flex-direction: column;
+}
+
+.navPoint{
+  display: flex;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   background-color: #6D9DC5;
@@ -41,15 +88,15 @@
  /* border-bottom: 3px solid black; */
 }
 
-.carBrand:nth-child(2){
+.navPoint:nth-child(2){
   background-color: #3066BE;
 }
 
-.carBrand:nth-child(3){
+.navPoint:nth-child(3){
   background-color: #80DED9;
 }
 
-.carBrand:last-child{
+.navPoint:last-child{
   height: 100vh;
   width: 100vw;
   background-color: #119DA4;
@@ -58,7 +105,7 @@
 .menuBar{
   position: fixed;
   top: 35%;
-  left: 4%;
+  left: 2%;
   height: 25px;
 }
 
@@ -66,8 +113,8 @@
   position: relative;
   box-sizing: border-box;
   list-style: none;
-  padding: 0.75em 0;
-  font-family: sans-serif;
+  padding: 1em 0;
+  font-family: 'Fira Sans', sans-serif;
   color: #fff;
 }
 
@@ -77,15 +124,15 @@
   left: -50%;
   content: "";
   display: block;
-  width: 1px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 5px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
   pointer-events: all;
 }
 
 .menuBar li p{
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 1em;
   visibility: hidden;
 }
@@ -96,7 +143,7 @@
 
 .menuBar .active p{
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 1em;
   display: block;
   visibility: visible;
@@ -108,8 +155,7 @@
   left: -50%;
   content: "";
   display: block;
-  width: 2px;
-  height: 20px;
-  transform: scaleX(1.5);
+  width: 5px;
+  height: 30px;
   background-color: rgba(255, 255, 255, 1);
 }
