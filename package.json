@@ -4,6 +4,7 @@
   "description": "Opgavens formål er at få afprøvet udvikling af en express baseret hjemmeside, via team arbejde.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
