@@ -1,3 +1,82 @@
-body {
-  background-color:black;
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#wrapper{
+  max-width: 100vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.carBrand{
+  height: 100vh;
+  width: 100vw;
+  background-color: #6D9DC5;
+}
+
+.carBrand:last-child{
+  height: 100vh;
+  width: 100vw;
+  background-color: #2b2b2b;
+}
+
+.menuBar{
+  position: fixed;
+  top: 35%;
+  left: 4%;
+  height: 25px;
+}
+
+.menuBar li{
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0.75em 0;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.menuBar li::after{
+  position: absolute;
+  top: 19%;
+  left: -50%;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: all;
+}
+
+.menuBar li p{
+  position: absolute;
+  top: 25%;
+  left: 1em;
+  visibility: hidden;
+}
+
+.menuBar li p:hover{
+  visibility: visible;
+}
+
+.menuBar .active p{
+  position: absolute;
+  top: 25%;
+  left: 1em;
+  display: block;
+  visibility: visible;
+}
+
+.menuBar .active::after{
+  position: absolute;
+  top: 19%;
+  left: -50%;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 20px;
+  transform: scaleX(1.5);
+  background-color: rgba(255, 255, 255, 1);
 }
