@@ -14,6 +14,34 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+	window.addEventListener('scroll', () => {
+		console.log(window.scrollY);
+		if(window.scrollY >= 0){
+			for(let i=0; i<navbar.length; i++){
+				navbar[i].classList.remove("active");
+			}
+			navbar[0].classList.add("active");
+		}
+		if(window.scrollY >= 625.33){
+			for(let i=0; i<navbar.length; i++){
+				navbar[i].classList.remove("active");
+			}
+			navbar[1].classList.add("active");
+		}
+		if(window.scrollY >= 1250){
+			for(let i=0; i<navbar.length; i++){
+				navbar[i].classList.remove("active");
+			}
+			navbar[2].classList.add("active");
+		}
+		if(window.scrollY >= 1874){
+			for(let i=0; i<navbar.length; i++){
+				navbar[i].classList.remove("active");
+			}
+			navbar[3].classList.add("active");
+		}
+	});
+
 	// let animation = false;
 	// window.onscroll = (e) => {
 	// 	if(this.oldScroll > this.scrollY){
