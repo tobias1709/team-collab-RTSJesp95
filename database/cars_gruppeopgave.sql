@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 16. 08 2019 kl. 12:50:27
+-- Genereringstid: 19. 08 2019 kl. 09:23:56
 -- Serverversion: 10.1.30-MariaDB
 -- PHP-version: 7.2.1
 
@@ -34,6 +34,17 @@ CREATE TABLE `brands` (
   `brand_image` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Data dump for tabellen `brands`
+--
+
+INSERT INTO `brands` (`brand_id`, `brand_title`, `brand_image`) VALUES
+(1, 'Audi', 'audi-logo.png'),
+(2, 'Mercedes-Benz', 'mercedes-logo.png'),
+(3, 'Porsche', 'Porsche-logo.png'),
+(4, 'BMW', 'bmw-logo.png'),
+(5, 'Volkswagen', 'Volkswagen-Logo.png');
+
 -- --------------------------------------------------------
 
 --
@@ -55,13 +66,16 @@ CREATE TABLE `cars` (
 --
 
 INSERT INTO `cars` (`cars_id`, `cars_title`, `cars_description`, `cars_topspeed`, `cars_price`, `cars_brand_fk`, `cars_image`) VALUES
-(1, 'title 1', 'This char is amazing', '64km/t', '64.000', 0, ''),
-(2, 'title 2', 'This char is amazing 2', '65km/t', '165.000', 0, ''),
-(3, 'title 3', 'This car is awesome 3', '64km/t', '165.000', 0, ''),
-(4, 'title 4', 'This car is awesome 4', '65km/t', '65.000', 0, ''),
-(5, 'title 5', 'This car is awesome 5', '12km/t', '1.222', 0, ''),
-(6, 'title 6', 'This car is awesome 6', '1km/t', '1.222', 0, ''),
-(7, 'title 7', 'This car is awesome 7', '2km/t', '999999999.999', 0, '');
+(1, 'title 1', 'This char is amazing', '64km/t', '64.000', 1, 'audi-r8.jpg'),
+(2, 'title 2', 'This char is amazing 2', '65km/t', '165.000', 1, 'audi-tt-rs.jpg'),
+(3, 'title 3', 'This car is awesome 3', '64km/t', '165.000', 4, 'BMW-m3-gtr.jpg'),
+(4, 'title 4', 'This car is awesome 4', '65km/t', '65.000', 4, 'bmw-m5.jpg'),
+(5, 'title 5', 'This car is awesome 5', '12km/t', '1.222', 2, 'mercedes-benz-e63.jpg'),
+(6, 'title 6', 'This car is awesome 6', '1km/t', '1.222', 2, 'mercedes-benz-slk55.jpg'),
+(7, 'title 7', 'This car is awesome 7', '2km/t', '999999999.999', 3, 'porsche-911-gt3.jpg'),
+(8, 'title 8', 'content 8', '64km/t', '1111.222', 3, 'porsche-911-turbo.jpg'),
+(9, 'title 9', 'content 9', '65km/t', '65.000', 5, 'vw-beetle-rsijpg.jpg'),
+(10, 'title 10', 'content 10', '12km/t', '1.222', 5, 'vw-golf-r32.jpg');
 
 --
 -- Begrænsninger for dumpede tabeller
@@ -87,13 +101,13 @@ ALTER TABLE `cars`
 -- Tilføj AUTO_INCREMENT i tabel `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `cars_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `cars_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
