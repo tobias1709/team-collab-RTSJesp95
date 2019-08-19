@@ -90,6 +90,7 @@ footer ul li{
   list-style: none;
   padding: 1em 0;
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
   color: #fff;
 }
 
@@ -109,7 +110,7 @@ footer ul li{
   position: absolute;
   top: 35%;
   left: 1em;
-  visibility: hidden;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .menuBar li p:hover{
@@ -121,7 +122,7 @@ footer ul li{
   top: 35%;
   left: 1em;
   display: block;
-  visibility: visible;
+  color: rgba(255, 255, 255, 1);
 }
 
 .menuBar .active::after{

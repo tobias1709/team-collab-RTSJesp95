@@ -22,19 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 			navbar[0].classList.add("active");
 		}
-		if(window.scrollY >= 625.33){
+		if(window.scrollY >= 625.33-300){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
 			navbar[1].classList.add("active");
 		}
-		if(window.scrollY >= 1250){
+		if(window.scrollY >= 1250-300){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
 			navbar[2].classList.add("active");
 		}
-		if(window.scrollY >= 1874){
+		if(window.scrollY >= 1874-300){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
