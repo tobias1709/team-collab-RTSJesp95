@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+	
 	let navbar = document.querySelectorAll('.menuBar li');
-	let navIndex = 0;
 
 	for(let i=0; i<navbar.length; i++){
 		navbar[i].addEventListener('click', () => {
