@@ -110,8 +110,9 @@ footer ul li{
 
 .about{
   display:block;
-
+  padding-bottom: 50px;
 }
+
 .about__title{
   text-align: center;
   padding-top:25px;
@@ -127,8 +128,9 @@ footer ul li{
 
 .about__logo--img{
   height:30vh;
-  position: absolute;
-  right:45%;
+  /* position: absolute; */
+  display: block;
+  margin: 0 auto;
 }
 
 .navPoint:last-child{
