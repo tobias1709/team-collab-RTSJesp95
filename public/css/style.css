@@ -113,9 +113,11 @@ footer ul li{
   position: relative;
   box-sizing: border-box;
   list-style: none;
-  padding: 1em 0;
+  padding: 1.4em 0;
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
   color: #fff;
+  cursor: pointer;
 }
 
 .menuBar li::after{
@@ -125,28 +127,28 @@ footer ul li{
   content: "";
   display: block;
   width: 5px;
-  height: 30px;
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   pointer-events: all;
 }
 
 .menuBar li p{
   position: absolute;
-  top: 35%;
+  top: 44%;
   left: 1em;
-  visibility: hidden;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .menuBar li p:hover{
-  visibility: visible;
+  color: rgba(255, 255, 255, 1);
 }
 
 .menuBar .active p{
   position: absolute;
-  top: 35%;
+  top: 44%;
   left: 1em;
   display: block;
-  visibility: visible;
+  color: rgba(255, 255, 255, 1);
 }
 
 .menuBar .active::after{
@@ -156,6 +158,6 @@ footer ul li{
   content: "";
   display: block;
   width: 5px;
-  height: 30px;
+  height: 40px;
   background-color: rgba(255, 255, 255, 1);
 }
