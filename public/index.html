@@ -47,6 +47,26 @@
 			</div>
 
 			<div class="navPoint contact">
+				<form class="form" method="post" name="sendform" action="http://www.boxcode.dk/cgi-bin/FormMail.pl">
+					<div>
+						<input type="hidden" name="recipient">
+						<input type="hidden" name="subject">
+						<input type="hidden" name="required" value="Name, Topic, Email, Message">
+					</div>
+					<div class="forms">
+						<div>			
+							<input type="text" name="Name" placeholder="Name." required>
+							<input type="text" name="Topic" placeholder="Topic." required>
+							<input type="email" name="Email" placeholder="Email." required>
+						</div>
+						<div>
+							<textarea name="Message" placeholder="Message."></textarea>
+						</div>
+						
+					</div>
+					<input class="sendbtn" type="submit" value="Send.">
+				</form>
+
 				<footer>
 					<div class="crew">
 						<h3>Location</h3>

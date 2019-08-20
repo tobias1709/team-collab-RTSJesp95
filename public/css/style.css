@@ -136,3 +136,62 @@ footer ul li{
   height: 40px;
   background-color: rgba(255, 255, 255, 1);
 }
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forms
+{
+  display: flex;
+	justify-content: center;
+	color: #000;
+}
+
+form{
+  padding-top: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+
+.sendbtn{
+  margin-top: 3em;
+}
+
+
+input, textarea
+{
+  width: 25em;
+  padding: 10px;
+	border: solid 1px rgba(0,0,0,0.2);
+	font-size: 0.9em;
+	color: black;
+  box-sizing: border-box;
+}
+
+textarea:focus, input:focus
+{
+	outline: none;
+}
+
+input
+{
+	height: 100%;
+}
+
+textarea
+{
+  font-family: 'fira sans';
+  width: 25em;
+	resize: none;
+	height: 100%;
+}
