@@ -4,7 +4,7 @@ module.exports = (app) => {
     async function getBrands() {
         let db = await mysql.connect();
         let [brands] = await db.execute(`
-           SELECT brand_id, brand_title, brand_image 
+           SELECT brand_id, brand_title, brand_slogan, brand_image 
            FROM brands`);
         db.end();
         return brands;
@@ -23,6 +23,7 @@ module.exports = (app) => {
         , cars_image
         , brand_id
         , brand_title
+        , brand_slogan
         , brand_image
         FROM cars
         INNER JOIN brands ON brand_id = cars_brand_fk`)
@@ -46,6 +47,7 @@ module.exports = (app) => {
         // , cars_image
         // , brand_id
         // , brand_title
+        // , brand_slogan
         // , brand_image
         // FROM cars
         // INNER JOIN brands ON brand_id = cars_brand_fk`)
@@ -69,6 +71,7 @@ module.exports = (app) => {
         // , cars_image
         // , brand_id
         // , brand_title
+        // , brand_slogan
         // , brand_image
         // FROM cars
         // INNER JOIN brands ON brand_id = cars_brand_fk`)
@@ -94,6 +97,7 @@ module.exports = (app) => {
         , cars_weight_kg
         , brand_id
         , brand_title
+        , brand_slogan
         , brand_image
         FROM cars
         INNER JOIN brands ON brand_id = cars_brand_fk WHERE brand_id = ?`, [req.params.carid])
