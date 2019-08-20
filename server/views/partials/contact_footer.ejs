@@ -1,4 +1,36 @@
 <div class="navPoint contact">
+    <div class="contactInfo">
+        <h2>
+            Contact
+        </h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Cras porttitor lobortis nunc.  <br> Donec tempus mauris in risus convallis maximus. 
+            Praesent auctor blandit enim hendrerit ultricies. <br>In sagittis porttitor lacinia. 
+            Donec interdum vehicula purus ac pretium. 
+            <br>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+        </p>
+    </div>
+    <form class="form" method="post" name="sendform">
+        <div>
+            <input type="hidden" name="recipient">
+            <input type="hidden" name="subject">
+            <input type="hidden" name="required" value="Name, Topic, Email, Message">
+        </div>
+        <div class="forms">
+            <div>			
+                <input type="text" name="Name" placeholder="Name." required>
+                <input type="text" name="Topic" placeholder="Topic." required>
+                <input type="email" name="Email" placeholder="Email." required>
+            </div>
+            <div>
+                <textarea name="Message" placeholder="Message."></textarea>
+            </div>
+            
+        </div>
+        <input class="sendbtn" type="submit" value="Send">
+    </form>
     <footer>
         <div class="crew">
             <h3>Location</h3>
