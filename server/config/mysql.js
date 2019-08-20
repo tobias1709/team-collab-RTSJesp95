@@ -7,7 +7,7 @@ module.exports = {
          user: 'root',
          password: '',
          port: '3306',
-         database: 'blog_site_uge32'
+         database: 'cars_gruppeopgave'
       });
    }
 }
