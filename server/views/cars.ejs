@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/cars.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1>The Carzone</h1>
+	</header>
+	<main>
+		<div class="cars">
+			<% cars.forEach(car => { %>
+			<div class="car">
+				<div class="car__image">
+					<img src="/img/<%- car.cars_image %>">
+				</div>
+				<div class="car__details">
+					<h2><%- car.cars_title %></h2>
+					<span><%- car.cars_price %> Kr</span>
+				</div>
+				<div class="car__more-details">
+					<span><h3>Topspeed:</h3><%- car.cars_topspeed %> km/t</span>
+					<span><h3>Year:</h3><%- car.cars_year %></span>
+					<span><h3>Weight:</h3> <%- car.cars_weight_kg %> Kg</span>
+				</div>
+				<div class="car__description">
+					<p><%- car.cars_description %></p>
+				</div>
+			</div>
+			<% }); %>
+		</div>
+	</main>
+</body>
+
+</html>
