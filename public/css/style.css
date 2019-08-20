@@ -1,32 +1,39 @@
+/* Generel Styling Start */
 *{
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 ::-webkit-scrollbar { 
   display: none; 
 }
+/* Generel Styling Slut */
 
+/* Wrapper Start */
 #wrapper{
   max-width: 100vw;
   margin: 0 auto;
   box-sizing: border-box;
 }
+/* Wrapper Slut */
 
+/* Header Start */
 header{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 header h1{
   letter-spacing: 10px;
   color: #fff;
 }
+/* Header Slut */
 
+/* Footer Start */
 footer{
   display: flex;
   width: 100vw;
@@ -37,7 +44,6 @@ footer{
   height: 25vh;
   font-size: 0.9em;
   background-color: rgba(255, 255, 255, 0.5);
-  font-family: 'Fira Sans', sans-serif;
 }
 
 footer h3{
@@ -54,15 +60,19 @@ footer ul li{
   display: flex;
   flex-direction: column;
 }
+/* Footer Start */
 
+/* Nav Start */
 .navPoint{
   display: flex;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   background-color: #6D9DC5;
 }
+/* Nav Slut */
 
+/* Styling af sektioner Start */
 .carBrand__home--title{
   color:white;
   font-size: 5em;
@@ -94,6 +104,8 @@ footer ul li{
 
 .navPoint:nth-child(3){
   background-color: #80DED9;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navPoint:last-child{
@@ -101,7 +113,9 @@ footer ul li{
   width: 100vw;
   background-color: #119DA4;
 }
+/* Styling af sektioner Slut */
 
+/* Menubar Start */
 .menuBar{
   position: fixed;
   top: 35%;
@@ -161,3 +175,34 @@ footer ul li{
   height: 40px;
   background-color: rgba(255, 255, 255, 1);
 }
+/* Menubar Slut */
+
+/* Styling af Brands Sektion Start */
+.brands-container{
+  display: grid;
+  grid-gap: 15px 15px;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.brands h1{
+  text-align: center; 
+  height: 40px; 
+}
+
+.brand img{
+  height: auto;
+  width: 250px;
+  transition-duration: 0.4s;
+}
+
+.brand img:hover{
+  transition-duration: 0.4s;
+  transform: scale(1.2);
+}
+
+.brand .porsche-logo{
+  width: 350px;
+  height: auto;
+}
+/* Styling af Brands Sektion Start */
