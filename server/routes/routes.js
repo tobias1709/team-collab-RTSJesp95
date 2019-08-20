@@ -79,6 +79,32 @@ module.exports = (app) => {
             // 'cars': cars[0]
         })
     })
+    app.get('/cars', async (req, res, next)=>{
+        let brands = await getBrands();
+        let db = await mysql.connect();
+        let cars = await db.execute(`
+        SELECT
+          cars_id
+        , cars_title
+        , cars_description
+        , cars_topspeed
+        , cars_price
+        , cars_image
+        , cars_year
+        , cars_weight_kg
+        , brand_id
+        , brand_title
+        , brand_image
+        FROM cars
+        INNER JOIN brands ON brand_id = cars_brand_fk`)
+        db.end();
+        res.render('cars', {
+            title: 'The Car Page',
+            'brands': brands,
+            'cars': cars[0]
+        })
+    })
+
     app.get('/cars/:carid', async (req, res, next)=>{
         let brands = await getBrands();
         let db = await mysql.connect();
