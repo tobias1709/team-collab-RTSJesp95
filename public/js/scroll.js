@@ -11,26 +11,26 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	window.addEventListener('scroll', () => {
-		console.log(window.scrollY);
+		console.log(window.scrollY, window.innerHeight*3-window.innerHeight/2);
 		if(window.scrollY >= 0){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
 			navbar[0].classList.add("active");
 		}
-		if(window.scrollY >= 540){
+		if(window.scrollY >= window.innerHeight*1-window.innerHeight/2){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
 			navbar[1].classList.add("active");
 		}
-		if(window.scrollY >= 1478){
+		if(window.scrollY >= window.innerHeight*2-window.innerHeight/2){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
 			navbar[2].classList.add("active");
 		}
-		if(window.scrollY >= 2414){
+		if(window.scrollY >= window.innerHeight*3-window.innerHeight/2){
 			for(let i=0; i<navbar.length; i++){
 				navbar[i].classList.remove("active");
 			}
