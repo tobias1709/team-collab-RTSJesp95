@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 19. 08 2019 kl. 13:06:44
+-- Genereringstid: 20. 08 2019 kl. 13:38:23
 -- Serverversion: 10.1.30-MariaDB
 -- PHP-version: 7.2.1
 
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `brands` (
   `brand_id` int(11) NOT NULL,
   `brand_title` varchar(128) NOT NULL,
+  `brand_slogan` varchar(128) CHARACTER SET utf16 NOT NULL,
   `brand_image` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -38,12 +39,12 @@ CREATE TABLE `brands` (
 -- Data dump for tabellen `brands`
 --
 
-INSERT INTO `brands` (`brand_id`, `brand_title`, `brand_image`) VALUES
-(1, 'Audi', 'audi-logo.png'),
-(2, 'Mercedes-Benz', 'mercedes-logo.png'),
-(3, 'Porsche', 'Porsche-logo.png'),
-(4, 'BMW', 'bmw-logo.png'),
-(5, 'Volkswagen', 'Volkswagen-Logo.png');
+INSERT INTO `brands` (`brand_id`, `brand_title`, `brand_slogan`, `brand_image`) VALUES
+(1, 'Audi', 'Vorsprung durch Technik', 'audi-logo.png'),
+(2, 'Mercedes-Benz', 'The Best or Nothing', 'mercedes-logo.png'),
+(3, 'Porsche', 'There is no Substitute', 'Porsche-logo.png'),
+(4, 'BMW', 'The Ultimate Driving Machine', 'bmw-logo.png'),
+(5, 'Volkswagen', 'The People\'s Car', 'Volkswagen-Logo.png');
 
 -- --------------------------------------------------------
 
