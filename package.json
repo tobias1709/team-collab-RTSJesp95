@@ -13,5 +13,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {}
+  "bugs": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
