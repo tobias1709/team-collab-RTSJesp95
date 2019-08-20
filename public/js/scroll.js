@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			let valueInVh = i*100;
 			navIndex = i;
 			window.scroll(0, valueInVh * window.innerHeight/100);
-			for(let x=0; x<navbar.length; x++){
-				navbar[x].classList.remove("active");
-			}
-			navbar[i].classList.add("active");
 		})
 	}
 

@@ -114,7 +114,7 @@ footer ul li{
 }
 
 .menuBar li p:hover{
-  visibility: visible;
+  color: rgba(255, 255, 255, 1);
 }
 
 .menuBar .active p{
