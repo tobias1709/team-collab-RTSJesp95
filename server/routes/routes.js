@@ -29,7 +29,7 @@ module.exports = (app) => {
         INNER JOIN brands ON brand_id = cars_brand_fk`)
         db.end();
         res.render('home', {
-            title: 'The Car Page',
+            title: 'The Carzone',
             'brands': brands,
             'cars': cars[0]
         })
@@ -102,7 +102,7 @@ module.exports = (app) => {
         INNER JOIN brands ON brand_id = cars_brand_fk`)
         db.end();
         res.render('cars', {
-            title: 'The Car Page',
+            title: 'The Carzone',
             'brands': brands,
             'cars': cars[0]
         })
@@ -129,7 +129,7 @@ module.exports = (app) => {
         INNER JOIN brands ON brand_id = cars_brand_fk WHERE brand_id = ?`, [req.params.carid])
         db.end();
         res.render('cars', {
-            title: 'The Car Page',
+            title: 'The Carzone',
             'brands': brands,
             'cars': cars[0]
         })
