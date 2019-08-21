@@ -297,6 +297,7 @@ textarea
   grid-gap: 15px 15px;
   grid-template-columns: auto auto;
   text-align: center;
+  align-items: center;
 }
 
 .brands h1{
