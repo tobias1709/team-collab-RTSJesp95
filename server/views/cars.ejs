@@ -6,19 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="/css/cars.css">
-	<title>Document</title>
+	<title><%= title%></title>
 </head>
 
 <body>
 	<header class="header">
 		<h1>The Carzone</h1>
 	</header>
+	
 	<main class="main">
-		<nav>
-			<ul>
-				<li><a href="/cars">All</a></li>
+		<nav class="nav">
+			<ul class="nav__category-list">
+				<li class="nav__category-list-item"><a href="/cars">All</a></li>
 				<% brands.forEach(brand => { %>
-				<li><a href="/cars/<%- brand.brand_id %>"><%- brand.brand_title %></a></li>
+				<li class="nav__category-list-item"><a href="/cars/<%- brand.brand_id %>"><%- brand.brand_title %></a>
+				</li>
 				<% }); %>
 			</ul>
 		</nav>
