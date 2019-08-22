@@ -43,7 +43,7 @@ footer{
   align-self: flex-end;
   height: 25vh;
   font-size: 0.9em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #0b0b0b;
 }
 
 footer h3{
@@ -68,7 +68,7 @@ footer ul li{
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #6D9DC5;
+  background-color: #4b4b4b;
   box-sizing: border-box;
 }
 /* Nav Slut */
@@ -93,25 +93,34 @@ footer ul li{
   right:20%;
 }
 
+p{
+  font-weight: 200;
+}
+
 .carBrand__home--img{
   width:100%;
   /* max-height:100vh; */
  /* border-bottom: 3px solid black; */
 }
 
-.navPoint:nth-child(2){
-  background-color: #3066BE;
-}
 
-.navPoint:nth-child(3){
-  background-color: #80DED9;
+.brands{
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #3b3b3b;
 }
 
 .about{
-  display:block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;s
   padding-bottom: 50px;
+  background-color: #2b2b2b;
+}
+
+.contact{
+  background-color: #1b1b1b;
 }
 
 .about__title{
@@ -121,7 +130,8 @@ footer ul li{
 
 #about__container{
   margin: 2% 10%;
-  font-size:20px;
+  font-size:0.9em;
+  line-height: 20px;
   font-family: 'Fira Sans', sans-serif;
   color:white;
   letter-spacing: 0.5px;
@@ -132,12 +142,6 @@ footer ul li{
   /* position: absolute; */
   display: block;
   margin: 0 auto;
-}
-
-.navPoint:last-child{
-  height: 100vh;
-  width: 100vw;
-  background-color: #119DA4;
 }
 /* Styling af sektioner Slut */
 
@@ -293,17 +297,19 @@ textarea
   display: grid;
   grid-gap: 15px 15px;
   grid-template-columns: auto auto;
-  text-align: center;
+  text-align: center; 
 }
 
-.brands h1{
+.brands h2{
   text-align: center; 
-  height: 40px; 
+  font-size: 3em;
+  color: #fff;
+  font-weight: 300;
 }
 
 .brand img{
   height: auto;
-  width: 250px;
+  width: 200px;
   transition-duration: 0.4s;
 }
 
