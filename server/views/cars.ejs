@@ -13,13 +13,16 @@
 	<header class="header">
 		<h1>The Carzone</h1>
 	</header>
-	
+
 	<main class="main">
-		<nav class="nav">
-			<ul class="nav__category-list">
-				<li class="nav__category-list-item"><a href="/cars">All</a></li>
+		<nav>
+			<ul class="menuBar">
+				<li class="<%= (typeof page == 'undefined' ? 'active' : '') %>">
+					<p><a class="nav-link" href="/cars">All</a></p>
+				</li>
 				<% brands.forEach(brand => { %>
-				<li class="nav__category-list-item"><a href="/cars/<%- brand.brand_id %>"><%- brand.brand_title %></a>
+				<li class="<%= (typeof page != 'undefined' && page == brand.brand_id ? 'active' : '') %>">
+					<p><a class="nav-link" href="/cars/<%- brand.brand_id %>"><%- brand.brand_title %></a></p>
 				</li>
 				<% }); %>
 			</ul>
@@ -54,9 +57,10 @@
 			<% }); %>
 		</div>
 	</main>
+
 	<button class="back"><a href="/"><i class="far fa-arrow-alt-circle-left">Home</i></a></button>
 	<script src="https://kit.fontawesome.com/7c822157fa.js"></script>
-	
+
 </body>
 
 </html>

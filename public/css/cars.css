@@ -1,25 +1,64 @@
+@import "/css/style.css";
 body {
-	background-color: whitesmoke;
+	background-color: gray;
 }
 .main {
 	display: grid;
 	grid-template-columns: 15vw 1fr;
 	grid-gap: 0 2em;
 }
-.nav {
-	background-color: white;
+/* Nav */
+.menuBar{
+	position: fixed;
+	top: 35%;
+	left: 2%;
+	height: 25px;
 }
-.nav__category-list {
-	list-style-type: none;
+
+.menuBar li{
+	position: relative;
+	box-sizing: border-box;
+	list-style: none;
+	padding: 1.4em 0;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 200;
+	color: #fff;
+	cursor: pointer;
 }
-.nav__category-list-item {
-	margin-bottom: 1em;
+
+.menuBar li::after{
+	position: absolute;
+	top: 19%;
+	left: -50%;
+	content: "";
+	display: block;
+	width: 5px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
+	pointer-events: all;
 }
-.nav__category-list-item a {
+
+.menuBar li a{
+	position: absolute;
+	top: 44%;
+	left: 1em;
+	color: rgba(255, 255, 255, 0.3);
+}
+.menuBar li a:hover{
+	color: rgba(255, 255, 255, 1);
+}
+.menuBar .active a{
+	position: absolute;
+	top: 44%;
+	left: 1em;
+	display: block;
+	color: rgba(255, 255, 255, 1);
+}
+.nav-link {
 	text-decoration: none;
-	color: black;
-	font-size: 1.5em;
 }
+/* Nav slut */
+
 .cars {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
