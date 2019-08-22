@@ -20,16 +20,21 @@
         </div>
         <div class="forms">
             <div>			
-                <input type="text" name="Name" placeholder="Name." required>
-                <input type="text" name="Topic" placeholder="Topic." required>
-                <input type="email" name="Email" placeholder="Email." required>
+                <input type="text" name="name" placeholder="Name" value="<%= typeof values != 'undefined' ? values.name: '' %>">
+                <input type="text" name="topic" placeholder="Topic" value="<%= typeof values != 'undefined' ? values.Topic: '' %>" >
+                <input type="email" name="email" placeholder="Email" value="<%= typeof values != 'undefined' ? values.email: '' %>">
             </div>
             <div>
-                <textarea name="Message" placeholder="Message."></textarea>
+                <textarea name="message" placeholder="Message"><%= typeof values != 'undefined' ? values.message : '' %></textarea>
             </div>
             
         </div>
         <input class="sendbtn" type="submit" value="Send">
+        <br>
+        <% if( typeof return_message != 'undefined'){ %>
+            <h4><%= return_message %></h4>
+        <% } %>
+        <br>
     </form>
     <footer>
         <div class="crew">
