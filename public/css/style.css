@@ -68,7 +68,7 @@ footer ul li{
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #6D9DC5;
+  background-color: #686963;
 }
 /* Nav Slut */
 
@@ -99,18 +99,20 @@ footer ul li{
 }
 
 .navPoint:nth-child(2){
-  background-color: #3066BE;
+  background-color: #686963;
 }
 
 .navPoint:nth-child(3){
-  background-color: #80DED9;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: #454545;
 }
 
 .about{
+<<<<<<< HEAD
   display: block;
   padding-bottom: 50px;
+=======
+  display:block;
+>>>>>>> upstream/master
 }
 
 .about__title{
@@ -136,7 +138,7 @@ footer ul li{
 .navPoint:last-child{
   height: 100vh;
   width: 100vw;
-  background-color: #119DA4;
+  background-color: #323031;
 }
 /* Styling af sektioner Slut */
 
@@ -295,7 +297,7 @@ textarea
 .brands-container{
   display: grid;
   grid-gap: 15px 15px;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   align-items: center;
 }
