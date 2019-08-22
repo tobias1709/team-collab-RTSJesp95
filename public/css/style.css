@@ -178,6 +178,10 @@ footer ul li{
   color: rgba(255, 255, 255, 0.3);
 }
 
+.menuBar .car-selection p{
+  top: 25%;
+}
+
 .menuBar li p:hover{
   color: rgba(255, 255, 255, 1);
 }
@@ -293,11 +297,11 @@ textarea
   grid-gap: 15px 15px;
   grid-template-columns: auto auto;
   text-align: center;
+  align-items: center;
 }
 
 .brands h1{
   text-align: center; 
-  height: 40px; 
 }
 
 .brand img{
@@ -314,5 +318,25 @@ textarea
 .brand .Porsche{
   width: 350px;
   height: auto;
+}
+
+.all-brands{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  transition-duration: 0.4s;
+}
+
+.all-brands:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.all-brands h1{
+  line-height: 225px;
+  color: white;
+}
+
+.all-brands a{
+  text-decoration: none;
 }
 /* Styling af Brands Sektion Slut */
