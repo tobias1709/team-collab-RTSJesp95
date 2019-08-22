@@ -122,6 +122,10 @@ p{
   background-color: #1b1b1b;
 }
 
+.about{
+  display: block;
+}
+
 .about__title{
   text-align: center;
   padding-top:25px;
