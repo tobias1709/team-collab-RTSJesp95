@@ -207,9 +207,9 @@ module.exports = (app) => {
           (?,?,?,?,?)`, [name, email, topic, message, contactDate]);
             // affected rows er større end nul, hvis en (eller flere) række(r) blev indsat
             if (result[0].affectedRows > 0) {
-                return_message.push('Tak for din besked, vi vender tilbage hurtigst muligt');
+                return_message.push('Thank you for your message, we will quickly as possible');
             } else {
-                return_message.push('Din besked blev ikke modtaget.... ');
+                return_message.push('Your message did not get received.... ');
             }
             let brands = await getBrands();
             let cars = await db.execute(`
