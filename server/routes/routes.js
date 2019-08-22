@@ -107,6 +107,7 @@ module.exports = (app) => {
             title: 'The Carzone',
             'brands': brands,
             'cars': cars
+            
         })
     })
 
@@ -133,7 +134,8 @@ module.exports = (app) => {
         res.render('cars', {
             title: 'The Carzone',
             'brands': brands,
-            'cars': cars[0]
+            'cars': cars[0],
+            page: req.params.carid
         })
     })
        //  tilføjes i routes.js filen f.eks. lige under app.get('/contact') endpoint

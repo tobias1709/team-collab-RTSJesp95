@@ -107,7 +107,8 @@ footer ul li{
 }
 
 .about{
-  display:block;
+  display: block;
+  padding-bottom: 50px;
 }
 
 .about__title{
