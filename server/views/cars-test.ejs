@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/cars.css">
+	<title><%= title%></title>
+</head>
+
+<body>
+	<main>
+		<div id="wrapper">
+			<ul class="menuBar">
+				<% brands.forEach(brand => { %>
+				<li>
+					<p><%- brand.brand_title %></p>
+				</li>
+				<% }); %>
+			</ul>
+
+			<% brands.forEach(brand => { %>
+			<div class="navPoint home">
+				<div class="cars">
+					<% if(typeof cars == 'undefined'){ %>
+					<% cars.forEach(car => { %>
+					<div class="car">
+						<div class="car__image">
+							<img src="/img/<%- car.cars_image %>">
+						</div>
+						<div class="car__wrapper">
+							<div class="car__details">
+								<h2><%- car.cars_title %></h2>
+								<span><%- car.cars_price %> Kr</span>
+							</div>
+							<div class="car__more-details">
+								<span>
+									<h3>Topspeed:</h3><%- car.cars_topspeed %> km/t
+								</span>
+								<span>
+									<h3>Year:</h3><%- car.cars_year %>
+								</span>
+								<span>
+									<h3>Weight:</h3> <%- car.cars_weight_kg %> Kg
+								</span>
+							</div>
+							<div class="car__description">
+								<p><%- car.cars_description %></p>
+							</div>
+						</div>
+					</div>
+					<% }); %>
+					<% } %>
+				</div>
+			</div>
+			<% }); %>
+		</div>
+	</main>
+	<button class="back"><a href="/"><i class="far fa-arrow-alt-circle-left">Home</i></a></button>
+
+	<script src="https://kit.fontawesome.com/7c822157fa.js"></script>
+	<script src="/js/scroll.js"></script>
+
+</body>
+
+</html>
