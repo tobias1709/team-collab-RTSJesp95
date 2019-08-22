@@ -1,6 +1,6 @@
 @import "/css/style.css";
 body {
-	background-color: gray;
+	background-color: red;
 }
 .main {
 	display: grid;
