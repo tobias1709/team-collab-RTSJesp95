@@ -114,7 +114,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;s
+  flex-direction: column;
   padding-bottom: 50px;
   background-color: #2b2b2b;
 }
@@ -181,6 +181,10 @@ p{
   top: 44%;
   left: 1em;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.menuBar .car-selection p{
+  top: 25%;
 }
 
 .menuBar li p:hover{
@@ -297,7 +301,8 @@ textarea
   display: grid;
   grid-gap: 15px 15px;
   grid-template-columns: auto auto;
-  text-align: center; 
+  text-align: center;
+  align-items: center;
 }
 
 .brands h2{
@@ -403,3 +408,25 @@ textarea
 }
 
 /* loading screen end */
+
+.all-brands{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  transition-duration: 0.4s;
+}
+
+.all-brands:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.all-brands h1{
+  line-height: 225px;
+  color: white;
+}
+
+.all-brands a{
+  text-decoration: none;
+}
+/* Styling af Brands Sektion Slut */
+

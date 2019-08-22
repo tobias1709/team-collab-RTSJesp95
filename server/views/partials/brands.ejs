@@ -6,27 +6,15 @@
             <h2>Brands</h2>
         </div>
         <br>
-        <!-- <div class="brand">
-            <a href="#" title="Vorsprung durch Technik"><img src="img/audi-logo.png" alt="Logo"></a>
-        </div>
-        <div class="brand">
-            <a href="#" title="The Ultimate Driving Machine"><img src="img/bmw-logo.png" alt="Logo"></a>
-        </div>
-        <div class="brand">
-            <a href="#" title="The Best or Nothing"><img src="img/mercedes-logo.png" alt="Logo"></a>
-        </div>
-        <div class="brand">
-            <a href="#" title="The People's Car"><img src="img/Volkswagen-Logo.png" alt="Logo"></a>
-        </div>
-        <div class="brand">
-            <a href="#" title="There is no Substitute"><img class="porsche-logo" src="img/Porsche-logo.png" alt="Logo"></a>
-        </div> -->
         <% if(typeof brands != 'undefined'){ %>
             <% brands.forEach(brand =>{ %>
                 <div class="brand">
-                    <a href="#" title="<%= brand.brand_slogan %>"><img class="<%= brand.brand_title%>" src="img/<%= brand.brand_image%>" alt="Logo"></a>            
+                    <a href="/cars/<%=brand.brand_id %>" title="<%= brand.brand_slogan %>"><img class="<%= brand.brand_title%>" src="img/<%= brand.brand_image%>" alt="Logo"></a>            
                 </div>
             <% })%>
         <% } %>
+        <div class="brands all-brands">
+            <a title="Show All Cars" href="/cars"><h1>All Brands</h1></a>
+        </div>
     </div>
 </div>
