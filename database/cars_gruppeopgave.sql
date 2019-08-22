@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 20. 08 2019 kl. 13:38:23
+-- Genereringstid: 22. 08 2019 kl. 09:04:07
 -- Serverversion: 10.1.30-MariaDB
 -- PHP-version: 7.2.1
 
@@ -80,6 +80,21 @@ INSERT INTO `cars` (`cars_id`, `cars_title`, `cars_description`, `cars_topspeed`
 (9, 'Beetle RSi', 'Lorem ipsum dolor sit amet, no pri assum labore, pro tollit tibique partiendo et. Cum no mentitum euripidis, et his salutandi erroribus. Vis laudem contentiones ad, duo cetero delicata complectitur no. Te sint natum has, vim laoreet veritus ut. Elit novum ubique te cum. Pro at wisi fugit assueverit, ei mea odio augue legere. Cum ne illud clita vocent, vis an tollit singulis necessitatibus.', '225', '537000.000', 5, 'vw-beetle-rsijpg.jpg', '2000', '1515'),
 (10, 'Golf R32', 'Lorem ipsum dolor sit amet, no pri assum labore, pro tollit tibique partiendo et. Cum no mentitum euripidis, et his salutandi erroribus. Vis laudem contentiones ad, duo cetero delicata complectitur no. Te sint natum has, vim laoreet veritus ut. Elit novum ubique te cum. Pro at wisi fugit assueverit, ei mea odio augue legere. Cum ne illud clita vocent, vis an tollit singulis necessitatibus.', '250', '500000.000', 5, 'vw-golf-r32.jpg', '2007', '1510');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `messages`
+--
+
+CREATE TABLE `messages` (
+  `message_id` int(11) NOT NULL,
+  `message_name` varchar(128) NOT NULL,
+  `message_email` varchar(128) NOT NULL,
+  `message_subject` varchar(128) NOT NULL,
+  `message_text` varchar(1024) NOT NULL,
+  `message_date` datetime(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Begrænsninger for dumpede tabeller
 --
@@ -97,6 +112,12 @@ ALTER TABLE `cars`
   ADD PRIMARY KEY (`cars_id`);
 
 --
+-- Indeks for tabel `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`message_id`);
+
+--
 -- Brug ikke AUTO_INCREMENT for slettede tabeller
 --
 
@@ -111,6 +132,12 @@ ALTER TABLE `brands`
 --
 ALTER TABLE `cars`
   MODIFY `cars_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- Tilføj AUTO_INCREMENT i tabel `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
