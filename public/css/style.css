@@ -43,7 +43,7 @@ footer{
   align-self: flex-end;
   height: 25vh;
   font-size: 0.9em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #0b0b0b;
 }
 
 footer h3{
@@ -68,6 +68,7 @@ footer ul li{
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
   background-color: #686963;
 }
 /* Nav Slut */
@@ -92,23 +93,37 @@ footer ul li{
   right:20%;
 }
 
+p{
+  font-weight: 200;
+}
+
 .carBrand__home--img{
   width:100%;
   /* max-height:100vh; */
  /* border-bottom: 3px solid black; */
 }
 
-.navPoint:nth-child(2){
-  background-color: #686963;
+.brands{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #3b3b3b;
 }
 
-.navPoint:nth-child(3){
-  background-color: #454545;
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background-color: #2b2b2b;
+}
+
+.contact{
+  background-color: #1b1b1b;
 }
 
 .about{
   display: block;
-  padding-bottom: 50px;
 }
 
 .about__title{
@@ -118,7 +133,8 @@ footer ul li{
 
 #about__container{
   margin: 2% 10%;
-  font-size:20px;
+  font-size:0.9em;
+  line-height: 20px;
   font-family: 'Fira Sans', sans-serif;
   color:white;
   letter-spacing: 0.5px;
@@ -129,12 +145,6 @@ footer ul li{
   /* position: absolute; */
   display: block;
   margin: 0 auto;
-}
-
-.navPoint:last-child{
-  height: 100vh;
-  width: 100vw;
-  background-color: #323031;
 }
 /* Styling af sektioner Slut */
 
@@ -233,7 +243,7 @@ footer ul li{
 
 .contactInfo h2{
   font-weight: 300;
-  padding: 1em;
+  padding: 2em;
   font-size: 3em;
 }
 
@@ -298,13 +308,16 @@ textarea
   align-items: center;
 }
 
-.brands h1{
+.brands h2{
   text-align: center; 
+  font-size: 3em;
+  color: #fff;
+  font-weight: 300;
 }
 
 .brand img{
   height: auto;
-  width: 250px;
+  width: 200px;
   transition-duration: 0.4s;
 }
 
@@ -317,6 +330,87 @@ textarea
   width: 350px;
   height: auto;
 }
+/* Styling af Brands Sektion Slut */
+
+
+/* loading screen start*/
+
+/* #wrapper{
+  display: none;
+}
+
+#loadingscreen{
+  position: absolute;
+  display: flex;
+	justify-content: center;
+	background-color: #1b1b1b;
+	align-items: center;
+	width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  transition: 1.2s ease-in-out;
+}
+
+.circle1{
+	position: absolute;
+	background-color: red;
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+}
+
+.circle1::after{
+	content: "";
+	width: 200px;
+	height: 200px;
+	background-color: #1b1b1b;
+	position: absolute;
+	border-radius: 100%;
+	animation: after 1s infinite linear;
+}
+
+.circle2{
+	background-color: white;
+	border-radius: 100%;
+	height: 160px;
+	width: 160px;
+	position: absolute;
+}
+
+.circle2::after{
+	content: "";
+	width: 160px;
+	height: 160px;
+	background-color: #1b1b1b;
+	position: absolute;
+	border-radius: 100%;
+	animation: after 1.1s infinite linear;
+}
+
+@keyframes after{
+	0% {
+		top: -2px;
+		left: -2px;
+	}
+	25% {
+		left: -2px;
+		top: 2px;
+	}
+	50%{
+		top: 2px;
+		left: 2px;	
+	}
+	75%{
+		left: 2px;
+		top: -2px;
+	}
+	100%{
+		top: -2px;
+		left: -2px;
+	}
+} */
+
+/* loading screen end */
 
 .all-brands{
   background-color: rgba(0,0,0,0.5);
@@ -338,3 +432,4 @@ textarea
   text-decoration: none;
 }
 /* Styling af Brands Sektion Slut */
+
