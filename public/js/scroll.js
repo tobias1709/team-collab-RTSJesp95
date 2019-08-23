@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		navbar[i].addEventListener('click', () => {
 			let valueInVh = i*100;
 			navIndex = i;
-			window.scroll(0, valueInVh * window.innerHeight/100);
+			window.scroll({
+				left: 0,
+				top: valueInVh * window.innerHeight/100,
+				behavior: "smooth"});
 		})
 	}
 
