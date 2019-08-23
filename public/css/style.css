@@ -303,6 +303,11 @@ textarea
 	resize: none;
 	height: 100%;
 }
+
+.form h4{
+  color: white;
+}
+
 /* Kontaktform Start */
 
 /* Styling af Brands Sektion Start */

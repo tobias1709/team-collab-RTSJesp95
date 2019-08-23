@@ -152,7 +152,7 @@ module.exports = (app) => {
         // håndter valideringen, alle fejl pushes til et array så de er samlet ET sted
         let return_message = [];
         if (name == undefined || name == '') {
-            return_message.push('Navn missing');
+            return_message.push('Name missing');
         }
         if (email == undefined || email == '') {
             return_message.push('Email missing');
@@ -207,7 +207,7 @@ module.exports = (app) => {
           (?,?,?,?,?)`, [name, email, topic, message, contactDate]);
             // affected rows er større end nul, hvis en (eller flere) række(r) blev indsat
             if (result[0].affectedRows > 0) {
-                return_message.push('Thank you for your message, we will quickly as possible');
+                return_message.push('Thank you for your message, we will return quickly as possible');
             } else {
                 return_message.push('Your message did not get received.... ');
             }
