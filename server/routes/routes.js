@@ -150,19 +150,18 @@ module.exports = (app) => {
         let contactDate = new Date();
 
         // håndter valideringen, alle fejl pushes til et array så de er samlet ET sted
-        let return_message_form = [];
         let return_message = [];
         if (name == undefined || name == '') {
-            return_message_form.push('Navn missing');
+            return_message.push('Name missing');
         }
         if (email == undefined || email == '') {
-            return_message_form.push('Email missing');
+            return_message.push('Email missing');
         }
         if (topic == undefined || topic == '') {
-            return_message_form.push('Topic missing');
+            return_message.push('Topic missing');
         }
         if (message == undefined || message == '') {
-            return_message_form.push('Message Text missing');
+            return_message.push('Message Text missing');
         }
 
         // dette er et kort eksempel på strukturen, denne udvides selvfølgelig til noget mere brugbart
