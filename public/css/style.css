@@ -130,7 +130,7 @@ p{
 }
 
 .about{
-  display: block;
+  display:block;
 }
 
 .about__title{
@@ -420,8 +420,8 @@ textarea
 /* loading screen end */
 
 .all-brands{
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 25px;
+  /* background-color: rgba(0,0,0,0.5);
+  border-radius: 25px; */
   transition-duration: 0.4s;
 }
 
